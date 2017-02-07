@@ -1,0 +1,9 @@
+{
+  "name": "escape-html-scalajs",
+  "version": "0.3.1",
+  "private": true,
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "source-map": "^0.5.6"
+  }
+}
