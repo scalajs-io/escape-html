@@ -1,21 +1,36 @@
-Escape-html API for Scala.js
+EscapeHtml API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [Escape-html](https://www.npmjs.com/package/escape-html)
+[escape-html](https://www.npmjs.com/package/escape-html) - Escape string for use in HTML.
 
-Escape string for use in HTML.
+### Description
 
-#### Build Dependencies
+Escape string for use in HTML
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+This module exports a single function, escapeHtml, that is used to escape a string of content such that it can be 
+interpolated in HTML content.
+
+This module will escape the following characters: ", ', &, <, and >.
+
+Note that the escaped value is only suitable for being interpolated into HTML as the text content of elements in 
+which the tag does not have different escaping mechanisms (it cannot be placed inside `<style>` or `<script>`, 
+for example, as those content bodies are not HTML, but CSS and JavaScript, respectively; these are known as 
+"raw text elements" in the HTML standard).
+
+Note when using the escaped value within a tag, it is only suitable as the value of an attribute, where the 
+value is quoted with either a double quote character (") or a single quote character (').
+
+### Build Dependencies
+
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +44,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.npm.escapehtml._
@@ -37,12 +52,12 @@ import io.scalajs.npm.escapehtml._
 EscapeHtml("foo & bar") // "foo &amp; bar"
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
-To add the Moment binding to your project, add the following to your build.sbt:  
+To add the `EscapeHtml` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "escape-html" % "0.3.0.3"
+libraryDependencies += "io.scalajs.npm" %%% "escape-html" % "1.0.3"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:

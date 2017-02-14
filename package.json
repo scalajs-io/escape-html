@@ -1,6 +1,6 @@
 {
-  "name": "escape-html-scalajs",
-  "version": "0.3.1",
+  "name": "escape-html-sjs",
+  "version": "1.0.3",
   "private": true,
   "dependencies": {
     "escape-html": "^1.0.3",
