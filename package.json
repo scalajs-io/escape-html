@@ -1,6 +1,6 @@
 {
   "name": "escape-html-sjs",
-  "version": "1.0.3-3",
+  "version": "1.0.3-4",
   "private": true,
   "dependencies": {
     "escape-html": "^1.0.3",

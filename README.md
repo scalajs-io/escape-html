@@ -56,7 +56,7 @@ EscapeHtml("foo & bar") // "foo &amp; bar"
 To add the `EscapeHtml` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "escape-html" % "1.0.3-3"
+libraryDependencies += "io.scalajs.npm" %%% "escape-html" % "1.0.3-4"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
