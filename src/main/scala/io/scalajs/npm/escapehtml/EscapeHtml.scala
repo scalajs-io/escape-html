@@ -1,7 +1,7 @@
 package io.scalajs.npm.escapehtml
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSImport
+import scala.scalajs.js.annotation.JSGlobal
 
 /**
   * escape-html - Escape string for use in HTML
@@ -26,5 +26,5 @@ trait EscapeHtml extends js.Object {
   * @author lawrence.daniels@gmail.com
   */
 @js.native
-@JSImport("escape-html", JSImport.Namespace)
+@JSGlobal
 object EscapeHtml extends EscapeHtml
