@@ -21,7 +21,7 @@ value is quoted with either a double quote character (") or a single quote chara
 
 ### Build Dependencies
 
-* [SBT v0.13.16](http://www.scala-sbt.org/download.html)
+* [SBT v1.2.x](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
 
@@ -56,7 +56,7 @@ EscapeHtml("foo & bar") // "foo &amp; bar"
 To add the `EscapeHtml` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "escape-html" % "0.4.2"
+libraryDependencies += "io.scalajs.npm" %%% "escape-html" % "0.5.0"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
